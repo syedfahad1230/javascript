@@ -148,39 +148,39 @@
 
 
 
-// var input = document.querySelector('#todo');
-// var list = document.querySelector('ol');
-// var todo=[];
-// function renderTodo() {
-//     // console.log(input.value)
-//     list.innerHTML = ''
-//     for (var i = 0; i < todo.length; i++) {
-//         list.innerHTML += `<li>${todo[i]}
-//         <button onclick="deleteTodo(${i})">delete</button>
-//         <button onclick="editTodo(${i})">edit</button>
-//         </li>`
-//     }
-// }
+var input = document.querySelector('#todo');
+var list = document.querySelector('ol');
+var todo=[];
+function renderTodo() {
+    // console.log(input.value)
+    list.innerHTML = ''
+    for (var i = 0; i < todo.length; i++) {
+        list.innerHTML += `<li>${todo[i]}
+        <button onclick="deleteTodo(${i})">delete</button>
+        <button onclick="editTodo(${i})">edit</button>
+        </li>`
+    }
+}
 
 
-// function addTodo() {
-//     todo.push(input.value);
-//     console.log(todo);
-//     input.value = ''
-//     renderTodo()
-// }
+function addTodo() {
+    todo.push(input.value);
+    console.log(todo);
+    input.value = ''
+    renderTodo()
+}
 
-// function deleteTodo(index){
-//     console.log("todo deleted",index)
-// todo.splice(index,1)
-// renderTodo()
-// }
+function deleteTodo(index){
+    console.log("todo deleted",index)
+todo.splice(index,1)
+renderTodo()
+}
 
 
-// function editTodo(index){
-//     var editedValue = prompt('enter new value');
-//     todo.splice(index,1,editedValue)
-//     renderTodo()
-//     }
+function editTodo(index){
+    var editedValue = prompt('enter new value');
+    todo.splice(index,1,editedValue)
+    renderTodo()
+    }
 
 
